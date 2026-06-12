@@ -1,0 +1,30 @@
+ public class s{
+ public static boolean armstrong(int n) {
+    int num = n;
+    int sum = 0;
+
+    while (num > 0) {
+        int digit = num % 10;
+        sum = sum + (digit * digit * digit);
+        num = num / 10;
+    }
+
+    if (sum == n) {
+        return true;
+    } else {
+        return false;
+    }
+}
+  public static void main(String arg[]) {
+     System.out.print(armstrong(153)); 
+      
+      
+  }  
+     
+     
+     
+     
+     
+     
+     
+ }
