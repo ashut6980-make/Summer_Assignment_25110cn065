@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    char str[100];
+    int length = 0;
+
+    // Request input from the user
+    printf("Enter a string: ");
+    
+    // Using fgets instead of scanf to read strings containing spaces safely
+    fgets(str, sizeof(str), stdin);
+
+    // Loop through the string until the null terminator is reached
+    while (str[length] != '\0') {
+        length++;
+    }
+
+    // fgets includes the newline character (\n) if there is room.
+    // We adjust the length to exclude it for an accurate character count.
+    if (length > 0 && str[length - 1] == '\n') {
+        length--;
+    }
+
+    // Display the final character count
+    printf("Length of the string is: %d\n", length);
+
+    return 0;
+}
