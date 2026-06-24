@@ -1,0 +1,9 @@
+public class LongestWord {
+    public static void main(String[] args) {
+        String str = "I am studying ComputerScience";
+
+        String[] words = str.split(" ");
+
+        String longest = words[0];
+
+        for (int i = 1; i < words
