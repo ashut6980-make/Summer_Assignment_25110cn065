@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+class Employee {
+    int id;
+    String name;
+    double basicSalary;
+    double hra;
+    double da;
+    double totalSalary;
+
+    Employee(int id, String name, double basicSalary) {
+        this.id = id;
+        this.name = name;
+        this.basicSalary = basicSalary;
+
+        hra = 
